@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flynasour</title>
+</head>
+<style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.button3 {
+  background-color: white;
+  color: black;
+  border: 2px solid #f44336;
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+}
+
+.button4:hover {background-color: #e7e7e7;}
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+h1{
+  font-weight: bold;
+  color: white;
+  font-size: 75px;
+}
+h3{
+  color: white;
+}
+h5{
+  color: white;
+}
+</style>
+<script>
+ function passvalues()
+ {
+  var nme = document.getElementById("txt").value;  // set var username  nme = textvalue
+  localStorage.setItem("textvalue", nme);
+  return false;
+  }
+  </script>
+<body bgcolor="black">
+<div align="center">
+<h1 align="center">Flynasour</h1>
+<h3>Enter your name:<h3>
+  <form action="game.html">
+
+  <input type="text" id="txt"><br><br>
+
+  <input type="submit" value="Play Now!" class="button button2" onclick="passvalue();"/>
+  </form>
+</div>
+</body>
+</html>
